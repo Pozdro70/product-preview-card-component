@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.perfume {
+  letter-spacing: 4px;
+  color: gray;
+  font-size: 12px;
+}
+
+.name {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.description {
+  color: gray;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ceny {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+
+body {
+  background-color: rgb(252, 239, 224);
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box2 {
+  display: flex;
+  max-width: 600px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+img.img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.skerslonacena {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #888;
+}
+
+button {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 14px;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .box2 {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  img.img {
+    content: url("images/image-product-mobile.jpg");
+    width: 100%;
+  }
+
+  .text {
+    width: 100%;
+  }
+}
